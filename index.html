@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">MSP</div>
+
+            <!-- CSS-only mobile toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#namecard">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>A Passionate Student & Developer</p>
+            <a href="#about" class="cta-button">Learn More About Me</a>
+        </div>
+    </section>
+
+    <section id="namecard" class="namecard">
+        <div class="container">
+            <h2>My Name Card</h2>
+            <div class="card-container">
+                <!-- Make the flip-card a focusable, accessible control -->
+                <div class="flip-card" role="button" tabindex="0" aria-pressed="false" aria-label="Name card: click to flip">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" aria-hidden="false">
+                            <div class="card-logo">
+                                <img src="Foto animek.jpg" alt="Foto Muhamad Satriyo Pambudi" onerror="this.onerror=null;this.src='https://via.placeholder.com/80'">
+                            </div>
+                            <div class="card-details">
+                                <h3>Muhamad Satriyo Pambudi</h3>
+                                <p class="title">Student Developer</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" aria-hidden="true">
+                            <ul class="contact-details">
+                                <li><i class="fas fa-phone"></i> 085334776946</li>
+                                <li><i class="fas fa-envelope"></i> muhamadsatriyop@gmail.com</li>
+                                <li><i class="fas fa-map-marker-alt"></i> Kediri, Jawa Timur</li>
+                                <li><i class="fas fa-school"></i> SMAN 1 Gurah</li>
+                            </ul>
+                            <div class="card-social">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-img">
+                    <img src="https://via.placeholder.com/300" alt="Profile Picture">
+                </div>
+                <div class="bio">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li><strong>Name:</strong>Muhamad  Satriyo Pambudi</li>
+                        <li><strong>Age:</strong> 16</li>
+                        <li><strong>Location:</strong> Kediri, Jawa Timur</li>
+                        <li><strong>Email:</strong> muhamadsatriyop@gmail.com</li>
+                        <li><strong>Phone:</strong> 085334776946</li>
+                    </ul>
+                    <p class="bio-text">
+                        Berusaha menggabut menjadi seorang anak teknik
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <h3>Current Education</h3>
+                    <p class="school">SMAN 1 Gurah</p>
+                    <p class="year">2023 - 2025</p>
+                    <p class="description">IPA Informatika</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Publik Speaking</li>
+                        <li>Teamwork</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Bahasa Indonesia</li>
+                        <li>Bahasa JAWAA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-options">
+                    <a href="https://wa.me/6285334776946" class="contact-option whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="option-details">
+                            <h3>WhatsApp</h3>
+                            <p>Chat with me on WhatsApp</p>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com/msatryopamb" class="contact-option instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <div class="option-details">
+                            <h3>Instagram</h3>
+                            <p>Follow me on Instagram</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-description">
+                    <p>Feel free to reach out to me through WhatsApp or Instagram. I'll respond as soon as possible!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Muhamad Satriyo Pambudi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
